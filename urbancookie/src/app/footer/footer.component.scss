@@ -12,3 +12,13 @@
 .reservedline {
     background-color: $urbpurple;
 }
+
+.rightcopytext {
+    text-align: right;
+}
+
+@media(max-width: 768px) {
+    .rightcopytext {
+        text-align: left;
+    }
+}

@@ -10,6 +10,10 @@ $urbparagraph: #3d3d3d;
     box-sizing: border-box!important;
 }
 
+body {
+    overflow-y:scroll;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: $urbpurple!important;
     font-weight: 900!important;

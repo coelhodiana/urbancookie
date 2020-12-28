@@ -1,0 +1,19 @@
+.cardhover:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 34px rgba(155, 130, 178, 0.3);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card-columns {
+      column-count: 2;
+}
+
+.parallax {
+    height: 400px;
+    background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
