@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { ShopComponent } from './shop/shop.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { PublicacaoComponent } from './publicacao/publicacao.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
     FooterComponent,
     SobreComponent,
     ShopComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    PublicacaoComponent
   ],
   imports: [
     BrowserModule,
