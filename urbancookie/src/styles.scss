@@ -1,17 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
 /* @import './customize-bootstrap.scss'; */
-$urbpurple: #8B67A7;
-$urbparagraph: #333;
+$urbpurple: #9B82b2;
+$urblightpurple: #e8e0f1;
+$urbparagraph: #3d3d3d;
 
 * {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900!important;
     box-sizing: border-box!important;
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
     color: $urbpurple!important;
+    font-weight: 900!important;
+}
+
+a {
+    h6, p {
+        font-weight: 500!important;
+        color: $urbpurple!important;
+    }
+
 }
 
 p {
@@ -31,20 +40,13 @@ p {
     height: auto;
 }
 
-/* 
-$theme-colors: (
-  "primary": #8B67A7
-); */
-
-/* @import '../node_modules/bootstrap/scss/bootstrap'; */
-
 @media(max-width: 768px) {
     h1.display-1{
         font-size: 3rem;
     }
 
     h2.display-4{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
 }

@@ -1,0 +1,21 @@
+@import '../../styles.scss';
+
+.navlinks {
+    border-radius: 50px;
+}
+
+.navlinks:hover {
+    background-color: $urblightpurple;
+    transition: 0.5s;
+}
+
+@media(max-width: 768px) {
+    .bglinks {
+        background-color: $urblightpurple!important;
+    }
+    
+    .navlinks:hover {
+        background-color: $urblightpurple;
+        transition: 0.5s;
+    }
+}

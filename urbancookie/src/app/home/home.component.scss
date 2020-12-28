@@ -1,6 +1,6 @@
 .parallax {
-    height: 300px;
-    background-image: url("https://images.unsplash.com/photo-1608664184787-bc242c158441?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    height: 400px;
+    background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,12 +12,65 @@
 
 }
 
+/* .divimg {
+    width: auto;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.innerimg {
+    width: 150%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+} */
+
+.cardhover:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 34px rgba(155, 130, 178, 0.3);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
 .card-columns {
       column-count: 2;
 }
 
-@media(max-width: 320px) {
+/* Hero Banner */
+
+.divheroimg {
+    height: 70vh;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.innerheroimg {
+    width: 180%;
+}
+
+/* Hero Banner */
+
+@media(max-width: 420px) {
     .card-columns {
         column-count: 1;
-  }
+    }
+
+    .divimg {
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .innerimg {
+        height: 100%;
+    }
 }
