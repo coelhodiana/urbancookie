@@ -1,11 +1,4 @@
-.parallax {
-    height: 300px;
-    background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+@import '../../styles.scss';
 
 .text {
     line-height: 1.4rem;
