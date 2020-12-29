@@ -1,0 +1,50 @@
+@import '../../styles.scss';
+
+.divbox {
+    height: 250px;
+
+}
+.cardhover:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 34px rgba(155, 130, 178, 0.3);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card-columns {
+      column-count: 2;
+}
+
+/* Hero Banner */
+
+.divheroimg {
+    height: 70vh;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.innerheroimg {
+    width: 180%;
+}
+
+/* Hero Banner */
+
+@media(max-width: 420px) {
+    .card-columns {
+        column-count: 1;
+    }
+
+    .divimg {
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .innerimg {
+        height: 100%;
+    }
+}
