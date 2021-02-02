@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "urbancookie"
+  "defaultProject": "urbancookie",
+  "cli": {
+    "analytics": false
+  }
 }

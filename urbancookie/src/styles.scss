@@ -55,6 +55,11 @@ p {
 
 }
 
+.breadcrumb-item a{
+    color:$urbpurple;
+    font-weight: 500;
+}
+
 .parallax {
     height: 300px;
     background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
@@ -93,4 +98,15 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.urbcontainer {
+    width: 90%!important;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.urbbutton {
+    color: white!important;
+    background-color: $urbpurple!important;
 }

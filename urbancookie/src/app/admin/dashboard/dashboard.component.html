@@ -1,0 +1,46 @@
+<div class="d-flex">
+    <app-sidebar></app-sidebar>
+
+    <div class="w-100 d-flex justify-content-center">
+        <div class="urbcontainer">
+
+            <div class="mb-5 d-flex justify-content-between">
+                <h2 class="display-5">Publicações da Galeria</h2>
+                <button routerLink='/newpost' type="button" class="btn urbbutton">Nova publicação</button>
+            </div>
+
+
+            <div class="contentoverflow">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Título ({{posts.length}})</th>
+                            <th scope="col" class="text-right">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor='let post of posts'>
+                        <tr>
+                            <th>{{post.id}}</th>
+                            <th>{{post.date}}</th>
+                            <td>{{post.title}}</td>
+                            <td>
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-outline-success mr-2 mt-1"
+                                        [routerLink]="['/editar-post', post.id]">Editar</button>
+                                    <button class="btn btn-outline-danger ml-3 mt-1"
+                                        [routerLink]="['/delete-post', post.id]">Apagar</button>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

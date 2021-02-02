@@ -14,8 +14,19 @@ import { Publicacao2Component } from './publicacao2/publicacao2.component';
 import { Publicacao3Component } from './publicacao3/publicacao3.component';
 import { InstafeedComponent } from './instafeed/instafeed.component';
 import { PostService } from './service/post.service';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { LoginComponent } from './admin/login/login.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { HomecontentComponent } from './admin/homecontent/homecontent.component';
+import { UsersComponent } from './admin/users/users.component';
+import { NewpostComponent } from './admin/newpost/newpost.component';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -27,12 +38,13 @@ import { PostService } from './service/post.service';
     PublicacaoComponent,
     Publicacao2Component,
     Publicacao3Component,
-    InstafeedComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    InstafeedComponent,
+    DashboardComponent,
+    LoginComponent,
+    SidebarComponent,
+    HomecontentComponent,
+    UsersComponent,
+    NewpostComponent
   ],
   providers: [PostService],
   bootstrap: [AppComponent]
