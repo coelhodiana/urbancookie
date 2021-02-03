@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { posts } from '../posts';
+import { PostsService } from '../service/posts.service';
 
 @Component({
   selector: 'app-newpost',
@@ -8,22 +8,18 @@ import { posts } from '../posts';
   styleUrls: ['./newpost.component.scss']
 })
 export class NewpostComponent implements OnInit {
-  post;
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(
+    private postsService: PostsService
+  ) { }
+
+  ngOnInit() {
+    
   }
 
   addNewPost() {
-
+    
   }
-
-  /* 
-    addToCart(product) {
-    this.cartService.addToCart(product);
-    window.alert('Your product has been added to the cart!');
-  }
-  */
 
 }

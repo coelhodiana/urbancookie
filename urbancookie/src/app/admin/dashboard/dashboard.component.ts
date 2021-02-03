@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { posts } from '../posts';
+import { PostsService } from '../service/posts.service';
+
+import { Post } from '../model/post';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,11 +9,21 @@ import { posts } from '../posts';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  posts = posts;
+  post: Post = new Post()
+  listPosts: Post[]
 
-  constructor() { }
+  constructor(private postsService: PostsService) {
+    this.listPosts = [];
+   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.findAllPosts()
+  }
+
+  findAllPosts() {
+    this.postsService.getAllPosts().subscribe((resp: Post[]) => {
+      this.listPosts = resp
+    })
   }
 
 }

@@ -16,14 +16,14 @@
                         <tr>
                             <th scope="col">id</th>
                             <th scope="col">Data</th>
-                            <th scope="col">Título ({{posts.length}})</th>
+                            <th scope="col">Título ({{listPosts.length}})</th>
                             <th scope="col" class="text-right">Ações</th>
                         </tr>
                     </thead>
-                    <tbody *ngFor='let post of posts'>
+                    <tbody *ngFor='let post of listPosts'>
                         <tr>
                             <th>{{post.id}}</th>
-                            <th>{{post.date}}</th>
+                            <th>{{ post.date | date }}</th>
                             <td>{{post.title}}</td>
                             <td>
                                 <div class="d-flex justify-content-end">
