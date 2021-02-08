@@ -1,6 +1,6 @@
-export interface UsuarioLogin{
-    usuario: string
-    senha: string
-    admin:boolean
-    token: string
+export class UsuarioLogin{
+    public usuario!: string
+    public senha!: string
+    public admin!:boolean
+    public token!: string
 }
