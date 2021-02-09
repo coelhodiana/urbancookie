@@ -13,17 +13,17 @@
         <form>
           <div class="form-group">
             <label for="title">Título da Publicação</label>
-            <input type="text" class="form-control" id="title" placeholder="Título" [(ngModel)]="post.title">
+            <input type="text" class="form-control" id="title" placeholder="Título" [(ngModel)]="post.title" name="title" required> 
           </div>
 
           <div class="form-group">
             <label for="image">URL da Imagem</label>
-            <input type="url" class="form-control" id="image" placeholder="http://..." [(ngModel)]="post.image">
+            <input type="url" class="form-control" id="image" placeholder="http://..." [(ngModel)]="post.image" name="image">
           </div>
 
           <div class="form-group">
             <label for="article">Texto</label>
-            <textarea class="form-control" id="article" rows="3" placeholder="Insira o texto da publicação" [(ngModel)]="post.article"></textarea>
+            <textarea class="form-control" id="article" rows="3" placeholder="Insira o texto da publicação" [(ngModel)]="post.article" name="article"></textarea>
           </div>
 
           <button type="submit" class="btn urbbutton" (click)="addNewPost()">Publicar</button>

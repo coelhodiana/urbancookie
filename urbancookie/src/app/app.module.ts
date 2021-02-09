@@ -21,6 +21,7 @@ import { HomecontentComponent } from './admin/homecontent/homecontent.component'
 import { UsersComponent } from './admin/users/users.component';
 import { NewpostComponent } from './admin/newpost/newpost.component';
 import { FormsModule } from '@angular/forms';
+import { DeletePostComponent } from './admin/delete-post/delete-post.component';
 
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ import { FormsModule } from '@angular/forms';
     SidebarComponent,
     HomecontentComponent,
     UsersComponent,
-    NewpostComponent
+    NewpostComponent,
+    DeletePostComponent
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

@@ -24,6 +24,7 @@ export class NewpostComponent implements OnInit {
 
   addNewPost() {
     if (this.post.title == null) {
+      console.log(this.post)
       alert('Preencha os campos')
     } else {
       this.postsService.postPosts(this.post).subscribe((resp: any = Post) => {

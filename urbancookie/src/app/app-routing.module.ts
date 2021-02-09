@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { DeletePostComponent } from './admin/delete-post/delete-post.component';
 import { HomecontentComponent } from './admin/homecontent/homecontent.component';
 import { LoginComponent } from './admin/login/login.component';
 import { NewpostComponent } from './admin/newpost/newpost.component';
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'homecontent', component: HomecontentComponent },
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'newpost', component: NewpostComponent }
+  { path: 'newpost', component: NewpostComponent },
+  { path: 'delete-post/:id', component: DeletePostComponent }
   
 ];
 

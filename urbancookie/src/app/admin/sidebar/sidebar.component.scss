@@ -28,11 +28,12 @@ nav {
         }
 
         li:hover {
-            background-color: yellow;
+            background-color: $urblightpurple;
+            border-radius: 50%;
         }
 
         li:active {
-            background-color: rgb(0, 132, 255);
+            background-color: $urbpurple;
         }
     }
 
