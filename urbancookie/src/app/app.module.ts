@@ -22,6 +22,7 @@ import { UsersComponent } from './admin/users/users.component';
 import { NewpostComponent } from './admin/newpost/newpost.component';
 import { FormsModule } from '@angular/forms';
 import { DeletePostComponent } from './admin/delete-post/delete-post.component';
+import { ViewPostComponent } from './admin/view-post/view-post.component';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { DeletePostComponent } from './admin/delete-post/delete-post.component';
     HomecontentComponent,
     UsersComponent,
     NewpostComponent,
-    DeletePostComponent
+    DeletePostComponent,
+    ViewPostComponent
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

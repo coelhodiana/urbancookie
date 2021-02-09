@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Post } from '../model/Post';
-
 import { PostsService } from '../service/posts.service';
 
 @Component({
-  selector: 'app-delete-post',
-  templateUrl: './delete-post.component.html',
-  styleUrls: ['./delete-post.component.scss']
+  selector: 'app-view-post',
+  templateUrl: './view-post.component.html',
+  styleUrls: ['./view-post.component.scss']
 })
-export class DeletePostComponent implements OnInit {
+export class ViewPostComponent implements OnInit {
 
+  
   post: Post = new Post();
   idPost!: number
 
@@ -21,22 +21,13 @@ export class DeletePostComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.idPost = this.route.snapshot.params['id']
     this.findByIdPost(this.idPost)
-    
   }
 
   findByIdPost(id: number){
     this.postsService.getByIdPost(id).subscribe((resp: Post) => {
       this.post = resp
-    })
-  }
-
-  deleteThisPost() {
-    this.postsService.deletePost(this.idPost).subscribe(() => {
-      alert('Publicação apagada com sucesso!')
-      this.router.navigate(['/dashboard'])
     })
   }
 

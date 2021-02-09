@@ -6,6 +6,7 @@ import { HomecontentComponent } from './admin/homecontent/homecontent.component'
 import { LoginComponent } from './admin/login/login.component';
 import { NewpostComponent } from './admin/newpost/newpost.component';
 import { UsersComponent } from './admin/users/users.component';
+import { ViewPostComponent } from './admin/view-post/view-post.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { HomeComponent } from './home/home.component';
 import { PublicacaoComponent } from './publicacao/publicacao.component';
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'newpost', component: NewpostComponent },
-  { path: 'delete-post/:id', component: DeletePostComponent }
+  { path: 'delete-post/:id', component: DeletePostComponent },
+  { path: 'view-post/:id', component: ViewPostComponent }
   
 ];
 

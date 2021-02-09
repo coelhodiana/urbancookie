@@ -29,6 +29,9 @@
                                 <div class="d-flex justify-content-end">
 <!--                                     <button class="btn btn-outline-success mr-2 mt-1"
                                         [routerLink]="['/editar-post', post.id]">Editar</button> -->
+                                        <a [routerLink]="['/view-post', post.id]">
+                                            <button class="btn btn-outline-primary ml-3 mt-1">Ver</button>
+                                        </a>
                                         <a [routerLink]="['/delete-post', post.id]">
                                             <button class="btn btn-outline-danger ml-3 mt-1">Apagar</button>
                                         </a>
