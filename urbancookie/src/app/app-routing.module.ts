@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { DeletePostComponent } from './admin/delete-post/delete-post.component';
+import { EditPostComponent } from './admin/edit-post/edit-post.component';
 import { HomecontentComponent } from './admin/homecontent/homecontent.component';
 import { LoginComponent } from './admin/login/login.component';
 import { NewpostComponent } from './admin/newpost/newpost.component';
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'newpost', component: NewpostComponent },
   { path: 'delete-post/:id', component: DeletePostComponent },
-  { path: 'view-post/:id', component: ViewPostComponent }
+  { path: 'view-post/:id', component: ViewPostComponent },
+  { path: 'edit-post/:id', component: EditPostComponent }
   
 ];
 

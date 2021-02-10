@@ -23,6 +23,7 @@ import { NewpostComponent } from './admin/newpost/newpost.component';
 import { FormsModule } from '@angular/forms';
 import { DeletePostComponent } from './admin/delete-post/delete-post.component';
 import { ViewPostComponent } from './admin/view-post/view-post.component';
+import { EditPostComponent } from './admin/edit-post/edit-post.component';
 
 @NgModule({
   imports: [
@@ -50,7 +51,8 @@ import { ViewPostComponent } from './admin/view-post/view-post.component';
     UsersComponent,
     NewpostComponent,
     DeletePostComponent,
-    ViewPostComponent
+    ViewPostComponent,
+    EditPostComponent
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

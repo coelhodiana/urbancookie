@@ -32,4 +32,8 @@ export class PostsService {
 
   }
 
+  putPost(post: Post): Observable<Post> {
+    return this.http.put<Post>(`http://localhost:8080/articles`, post, this.token)
+  }
+
 }
