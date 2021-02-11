@@ -10,7 +10,6 @@ import { PostsService } from '../service/posts.service';
 })
 export class ViewPostComponent implements OnInit {
 
-  
   post: Post = new Post();
   idPost!: number
 

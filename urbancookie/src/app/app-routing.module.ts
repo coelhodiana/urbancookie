@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'galeria', component: GaleriaComponent },
   { path: 'loja', component: ShopComponent },
-  { path: 'publicacao', component: PublicacaoComponent },
+  { path: 'publicacao/:id', component: PublicacaoComponent },
   { path: 'publicacao2', component: Publicacao2Component },
   { path: 'publicacao3', component: Publicacao3Component },
   { path: 'dashboard', component: DashboardComponent },

@@ -7,13 +7,13 @@
                 <ol class="breadcrumb bg-light">
                   <li class="breadcrumb-item"><a routerLink='/home'>Home</a></li>
                   <li class="breadcrumb-item"><a routerLink='/galeria'>Galeria</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Onde relógios e rios não envelhecem</li>
+                  <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>
                 </ol>
               </nav>
         </div>
 
         <div class="row">
-            <h1 class="col-md-12 display-1">Onde relógios e rios não envelhecem</h1>
+            <h1 class="col-md-12 display-1">{{ post.title }}</h1>
         </div>
         <div class="row px-0">
             <div class="col-md-6 my-5">
@@ -21,25 +21,14 @@
                     <img src="../../assets/icons/share-2.svg" alt="">
                 </a>
                 <div class="my-5 mr-5">
-                    <p>
-                        Indo em direção ao rio, o garoto passa por um relógio e pensa em quanto tempo poderá brincar até a hora de voltar pra casa já com os dedos enrugados pela água. O rio idoso atravessa o corpo da cidade enquanto ninguém mais se lembra de quem ele um dia foi e ignoram o fato de sua idade ser suficiente pra que ele saiba que estamos na véspera do fim de tudo.
-                    </p>
-                    <p>
-                        O garoto passa pelo relógio fumando um cigarro e indo em direção ao bar da esquina, onde todos os seus amigos estão conversando sobre coisas pra se viver antes de já não se reconhecerem, coisas pra se fazer antes dos filhos crescerem e coisas pra se dizer antes dos pais envelhecerem. O garoto volta pra casa com os dedos enrugados de cerveja porque não confia mais em um rio que só se deteriora.
-                    </p>
-                    <p>
-                        Agora, o garoto tem artrite nos joelhos e passa pelo relógio sem conseguir enxergar muito bem que horas são, mas acreditando naquele rio mais do que em qualquer outra coisa, porque agora sabe que o fundo dele é feito de ouro misturado aos mesmos resíduos de existência que formam a sujeira debaixo das nossas unhas. O garoto pensa nisso e sorri, com os olhos úmidos como o rio e os dedos enrugados não por água, mas pelo tempo, que nunca disse que seria gentil.
-                    </p>
-                    <p>
-                        E mesmo assim, acabou sendo.
-                    </p>
+                    <p>{{ post.article }}</p>
 
                 </div>
             </div>
             <!-- Imagem -->
             <div class="col-md-6 px-0">
                 <div class="card border-0">
-                    <img class="card-img-top cardhover rounded-lg" src="../../assets/images/Urb50.png" alt="Card image cap">
+                    <img class="card-img-top cardhover rounded-lg" src="{{post.image}}" alt="Card image cap">
                 </div>
             </div>
         </div>
