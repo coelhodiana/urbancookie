@@ -30,7 +30,8 @@ a {
 p {
     font-weight: 500!important;
     color: $urbparagraph;
-    line-height: 2rem;
+    line-height: 1.8rem;
+    white-space: pre-line;
 }
 
 .divimg {
