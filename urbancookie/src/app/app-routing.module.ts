@@ -11,8 +11,6 @@ import { ViewPostComponent } from './admin/view-post/view-post.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { HomeComponent } from './home/home.component';
 import { PublicacaoComponent } from './publicacao/publicacao.component';
-import { Publicacao2Component } from './publicacao2/publicacao2.component';
-import { Publicacao3Component } from './publicacao3/publicacao3.component';
 import { ShopComponent } from './shop/shop.component';
 import { SobreComponent } from './sobre/sobre.component';
 
@@ -23,8 +21,6 @@ const routes: Routes = [
   { path: 'galeria', component: GaleriaComponent },
   { path: 'loja', component: ShopComponent },
   { path: 'publicacao/:id', component: PublicacaoComponent },
-  { path: 'publicacao2', component: Publicacao2Component },
-  { path: 'publicacao3', component: Publicacao3Component },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'homecontent', component: HomecontentComponent },
   { path: 'users', component: UsersComponent },

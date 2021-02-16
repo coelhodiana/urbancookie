@@ -10,8 +10,6 @@ import { SobreComponent } from './sobre/sobre.component';
 import { ShopComponent } from './shop/shop.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { PublicacaoComponent } from './publicacao/publicacao.component';
-import { Publicacao2Component } from './publicacao2/publicacao2.component';
-import { Publicacao3Component } from './publicacao3/publicacao3.component';
 import { InstafeedComponent } from './instafeed/instafeed.component';
 import { InstaUrlService } from './service/insta-url.service';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
@@ -41,8 +39,6 @@ import { EditPostComponent } from './admin/edit-post/edit-post.component';
     ShopComponent,
     GaleriaComponent,
     PublicacaoComponent,
-    Publicacao2Component,
-    Publicacao3Component,
     InstafeedComponent,
     DashboardComponent,
     LoginComponent,
