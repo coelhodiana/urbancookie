@@ -13,7 +13,7 @@ import { PublicacaoComponent } from './publicacao/publicacao.component';
 import { Publicacao2Component } from './publicacao2/publicacao2.component';
 import { Publicacao3Component } from './publicacao3/publicacao3.component';
 import { InstafeedComponent } from './instafeed/instafeed.component';
-import { PostService } from './service/post.service';
+import { InstaUrlService } from './service/insta-url.service';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { LoginComponent } from './admin/login/login.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
@@ -54,7 +54,7 @@ import { EditPostComponent } from './admin/edit-post/edit-post.component';
     ViewPostComponent,
     EditPostComponent
   ],
-  providers: [PostService],
+  providers: [InstaUrlService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

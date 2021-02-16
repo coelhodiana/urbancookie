@@ -51,24 +51,10 @@
                 </a>
             </div>
 
-            <div class="card border-0">
-                <a routerLink='/publicacao'>
-                    <img class="card-img-top cardhover rounded-lg" src="../../assets/images/Urb50.png"
-                        alt="Card image cap">
-                </a>
-            </div>
-
-            <div class="card border-0">
-                <a routerLink='/publicacao2'>
-                    <img class="card-img-top cardhover rounded-lg" src="../../assets/images/Urb49.png"
-                        alt="Card image cap">
-                </a>
-            </div>
-
-            <div class="card border-0">
-                <a routerLink='/publicacao3'>
-                    <img class="card-img-top cardhover rounded-lg" src="../../assets/images/Urb20_B.png"
-                        alt="Card image cap">
+            <div class="card border-0" *ngFor="let post of listPosts">
+                <a [routerLink]="['/publicacao', post.id]">
+                    <img class="card-img-top cardhover rounded-lg" src="{{post.image}}"
+                        alt="{{post.title}}">
                 </a>
             </div>
 

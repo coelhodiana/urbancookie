@@ -11,7 +11,7 @@
             <div *ngFor="let post of listPosts">
                 <a  [routerLink]="['/publicacao', post.id]">
                     <div class="card border-0">
-                        <img class="card-img-top cardhover rounded-lg" src="{{post.image}}" alt="Card image cap">
+                        <img class="card-img-top cardhover rounded-lg" src="{{post.image}}" alt="{{post.title}}">
                     </div>
                 </a>
             </div>
