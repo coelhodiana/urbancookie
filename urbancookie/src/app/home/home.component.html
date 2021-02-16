@@ -51,7 +51,7 @@
                 </a>
             </div>
 
-            <div class="card border-0" *ngFor="let post of listPosts">
+            <div class="card border-0" *ngFor="let post of listPosts  | slice:0:3 ; let i=index">
                 <a [routerLink]="['/publicacao', post.id]">
                     <img class="card-img-top cardhover rounded-lg" src="{{post.image}}"
                         alt="{{post.title}}">
