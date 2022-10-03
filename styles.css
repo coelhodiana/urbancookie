@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap);
 
 /* You can add global styles to this file, and also import other style files */
-/* @import './customize-bootstrap.scss'; */
+/* @import 'customize-bootstrap.scss'; */
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box !important;
