@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
-/* @import './customize-bootstrap.scss'; */
+/* @import 'customize-bootstrap.scss'; */
 $urbpurple: #9B82b2;
 $urblightpurple: #e8e0f1;
 $urbparagraph: #3d3d3d;
@@ -58,7 +58,7 @@ p {
 .parallax {
     height: 300px;
     background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
-    background-image: url('./assets/images/frame45.png');
+    background-image: url('assets/images/frame45.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ p {
 .parallax2 {
     height: 300px;
     background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
-    background-image: url('./assets/images/frame44.png');
+    background-image: url('assets/images/frame44.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ p {
 .parallax3 {
     height: 300px;
     background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
-    background-image: url('./assets/images/frame46.png');
+    background-image: url('assets/images/frame46.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ p {
 .parallax4 {
     height: 300px;
     background: linear-gradient(180deg, #A583B5 0%, #EC95B9 100%);
-    background-image: url('./assets/images/frame47.png');
+    background-image: url('assets/images/frame47.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
